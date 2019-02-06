@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="27792" started-at="2019-01-02T11:32:59Z" finished-at="2019-01-02T11:33:26Z">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="27792" started-at="2019-01-02T11:32:59Z" finished-at="2019-01-02T11:33:26Z">
+      <class name="mobile.TestBrowserStack">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobile.TestBrowserStack@3c09711b]" name="Setup" is-config="true" duration-ms="27764" started-at="2019-01-02T11:32:59Z" finished-at="2019-01-02T11:33:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="steps()[pri:0, instance:mobile.TestBrowserStack@3c09711b]" name="steps" duration-ms="8" started-at="2019-01-02T11:33:26Z" finished-at="2019-01-02T11:33:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- steps -->
+        <test-method status="PASS" signature="after()[pri:0, instance:mobile.TestBrowserStack@3c09711b]" name="after" is-config="true" duration-ms="0" started-at="2019-01-02T11:33:26Z" finished-at="2019-01-02T11:33:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- mobile.TestBrowserStack -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
