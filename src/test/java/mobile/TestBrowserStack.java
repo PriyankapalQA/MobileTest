@@ -19,7 +19,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class TestBrowserStack 
+public class TestBrowserStack2 
 {
 	AndroidDriver<WebElement> driver;
 	public static String userName = "priyankapal2";
@@ -32,20 +32,53 @@ public class TestBrowserStack
 		{
 			DesiredCapabilities caps = new DesiredCapabilities();
 
-			caps.setCapability("device", "Google Pixel");
-		//	caps.setCapability("app", "bs://c073e420ea1bf37bd8d26851c19fda568f0b69a0");
-			caps.setCapability("app", "bs://37320beb4c77d0d4af67252f2fcd3cd3641791fe");
-		//	caps.setCapability("APP_PACKAGE","org.wikipedia.alpha");
-			caps.setCapability("APP_PACKAGE","io.selendroid.testapp");
+	//		caps.setCapability("device", "Google Pixel");
+		//	caps.setCapability("app", "bs://3175c5eee356a60ce320830bb9556586f88c58b4");
+		//	caps.setCapability("app", "io.selendroid.testapp");
+		//	 caps.setCapability("os_version", "11");
+		//	caps.setCapability("APP_PACKAGE","selendroid-test-app.apk");
 			
 
-			AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps);
-		}
+		//	AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps);
+	
+			caps.setCapability("device", "Google Nexus 6");
+		    caps.setCapability("os_version", "6.0");
+			    caps.setCapability("app", "bs://3175c5eee356a60ce320830bb9556586f88c58b4");
+			    
+
+		AndroidDriver driver = new AndroidDriver(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps);
+	}
 		catch(Exception e){
 			System.out.println(e.getMessage());
 		}
 
 	}
+/*	@Test
+	public void steps() 
+	{
+		try 
+		{
+			 driver.findElement(By.id("my_text_field")).sendKeys("Hello");
+			 String a = driver.findElement(By.id("waitingButtonTest")).getText();
+			 System.out.println(a);
+//			 driver.findElement(By.id("io.selendroid.testapp:id/waitingButtonTest")).click();
+			 driver.findElement(By.id("visibleButtonTest")).click();
+			 String b=  driver.findElement(By.id("visibleTextView")).getText();
+			 System.out.println(b);
+			 Assert.assertEquals(b, "Text is sometimes displayed");
+			 
+			 driver.quit();
+		}
+		
+			catch (Exception e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	
+	*/
+	
 	@Test
 	public void f() {
 		try{
@@ -145,6 +178,10 @@ public class TestBrowserStack
 			}
 		
 	}
+	
+	
+	
+
 		@AfterClass
 		public void after()
 		{
