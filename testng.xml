@@ -3,9 +3,9 @@
 <suite name="Suite" thread-count="4" parallel="none" >
   <test  name="ChromeTest">
     <classes>
-   <!--   <class name="mobile.TestBrowserStack"/> -->
-        <class name="mobile.TestEmulator"/>
-    </classes>
+  <!--  <class name="mobile.TestBrowserStack"/> -->
+       <class name="mobile.TestEmulator"/>
+     </classes>
   </test> <!-- Test -->
   
   

@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27792" started-at="2019-01-02T11:32:59Z" finished-at="2019-01-02T11:33:26Z">
+  <suite name="Suite" duration-ms="108151" started-at="2019-04-13T06:06:35Z" finished-at="2019-04-13T06:08:23Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="27792" started-at="2019-01-02T11:32:59Z" finished-at="2019-01-02T11:33:26Z">
-      <class name="mobile.TestBrowserStack">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:mobile.TestBrowserStack@3c09711b]" name="Setup" is-config="true" duration-ms="27764" started-at="2019-01-02T11:32:59Z" finished-at="2019-01-02T11:33:26Z">
+    <test name="ChromeTest" duration-ms="108151" started-at="2019-04-13T06:06:35Z" finished-at="2019-04-13T06:08:23Z">
+      <class name="mobile.TestEmulator">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobile.TestEmulator@2344fc66]" name="Setup" is-config="true" duration-ms="32660" started-at="2019-04-13T06:06:35Z" finished-at="2019-04-13T06:07:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="steps()[pri:0, instance:mobile.TestBrowserStack@3c09711b]" name="steps" duration-ms="8" started-at="2019-01-02T11:33:26Z" finished-at="2019-01-02T11:33:26Z">
+        <test-method status="PASS" signature="testDisplayText()[pri:0, instance:mobile.TestEmulator@2344fc66]" name="testDisplayText" duration-ms="8246" started-at="2019-04-13T06:07:08Z" finished-at="2019-04-13T06:07:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- steps -->
-        <test-method status="PASS" signature="after()[pri:0, instance:mobile.TestBrowserStack@3c09711b]" name="after" is-config="true" duration-ms="0" started-at="2019-01-02T11:33:26Z" finished-at="2019-01-02T11:33:26Z">
+        </test-method> <!-- testDisplayText -->
+        <test-method status="PASS" signature="testLabel()[pri:0, instance:mobile.TestEmulator@2344fc66]" name="testLabel" duration-ms="78" started-at="2019-04-13T06:07:16Z" finished-at="2019-04-13T06:07:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- mobile.TestBrowserStack -->
+        </test-method> <!-- testLabel -->
+        <test-method status="PASS" signature="testRegistration()[pri:0, instance:mobile.TestEmulator@2344fc66]" name="testRegistration" duration-ms="210" started-at="2019-04-13T06:07:16Z" finished-at="2019-04-13T06:07:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="testToast()[pri:0, instance:mobile.TestEmulator@2344fc66]" name="testToast" duration-ms="0" started-at="2019-04-13T06:07:17Z" finished-at="2019-04-13T06:07:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToast -->
+        <test-method status="PASS" signature="testWaitingProgressBar()[pri:0, instance:mobile.TestEmulator@2344fc66]" name="testWaitingProgressBar" duration-ms="66892" started-at="2019-04-13T06:07:17Z" finished-at="2019-04-13T06:08:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWaitingProgressBar -->
+        <test-method status="PASS" signature="testWebView()[pri:0, instance:mobile.TestEmulator@2344fc66]" name="testWebView" duration-ms="0" started-at="2019-04-13T06:08:23Z" finished-at="2019-04-13T06:08:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebView -->
+      </class> <!-- mobile.TestEmulator -->
     </test> <!-- ChromeTest -->
   </suite> <!-- Suite -->
 </testng-results>

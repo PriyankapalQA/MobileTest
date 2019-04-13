@@ -53,19 +53,39 @@ public class TestEmulator {
 	}
 	
 	@Test
-	public void e() {
+	public void testWebView() {
 		try{
 	//  driver.findElement(By.id("buttonStartWebview")).click();
 		}
 		catch(Exception e)
 		{
 
-			System.out.println("method f "+e.getMessage());
+			System.out.println("method testWebView "+e.getMessage());
 		}
 	}
 	
+	
 	@Test
-	public void f() {
+	public void testRegistration()
+	{
+		try{
+					
+			if ( driver.findElement(By.id("input_adds_check_box")).isSelected() )
+			{
+				driver.findElement(By.id("input_adds_check_box")).click();
+			}
+	//		driver.findElement(By.id("startUserRegistration")).click();
+	//		registration();
+		}
+			catch(Exception e)
+			{
+				System.out.println("method testRegistration "+e.getMessage());
+			}
+		
+	}  
+	
+	@Test
+	public void testWaitingProgressBar() {
 		try{
 
 			String a = driver.findElement(By.id("waitingButtonTest")).getText();
@@ -101,6 +121,8 @@ public class TestEmulator {
 
 			driver.findElementByAndroidUIAutomator("new UiSelector().textContains(\""+"Python"+"\")").click();
 
+			System.out.println("Button in Registration selected: "+driver.findElement(By.id("input_adds")).isSelected());
+			
 			if ( !driver.findElement(By.id("input_adds")).isSelected() )
 			{
 				driver.findElement(By.id("input_adds")).click();
@@ -124,44 +146,86 @@ public class TestEmulator {
 		catch(Exception e)
 		{
 
-			System.out.println("method f "+e.getMessage());
+			System.out.println("method registration "+e.getMessage());
 		}
 
 	}
 
 	@Test
-	public void g()
+	public void testDisplayText()
 	{
 		try
 		{
 			driver.findElement(By.id("my_text_field")).sendKeys("Hello");
 			driver.findElement(By.id("visibleButtonTest")).click();
-			String b=  driver.findElement(By.id("visibleTextView")).getText();
-			System.out.println(b);
-			Assert.assertEquals(b, "Text is sometimes displayed");
+			//String b=  driver.findElement(By.id("visibleTextView")).getText(); 
+			
+			Assert.assertEquals(displayText("visibleTextView"), "Text is sometimes displayed"); 
 		}
 		catch(Exception e)
 		{
-			System.out.println("method g "+e.getMessage());
+			System.out.println("method testDisplayText "+e.getMessage());
+		}
+	}  
+	
+	public String displayText(String identifier)
+	{
+		return driver.findElement(By.id(identifier)).getText();
+	} 
+
+/*	@Test
+	public void testAlert()
+	{
+		try{
+		driver.findElement(By.id("showPopupWindowButton")).click();
+		driver.switchTo().alert().accept();
+		//System.out.println("Alert text: "+driver.switchTo().alert().getText());
+		driver.switchTo().alert().accept();  // id : showPopupWindowButton
+	//	driver.switchTo().alert().dismiss();
+		
+	}
+	catch(Exception e)
+	{
+		System.out.println("method testAlert "+e.getMessage());
+	}
+	}   */
+	
+	@Test
+	public void testLabel()
+	{
+		try{
+		System.out.println("The displayed text is: "+ displayText("encodingTextview"));
+		}
+		catch(Exception e)
+		{
+			System.out.println("method testLabel "+e.getMessage());
+		}
+	}
+
+	@Test
+	public void testToast()
+	{
+		try{
+	
+		}
+		catch(Exception e)
+		{
+			System.out.println("method testToast "+e.getMessage());
 		}
 	}
 
 	
-	@Test
-	public void h()
+/*	@Test
+	public void testException()
 	{
 		try{
-			driver.findElement(By.id("startUserRegistration")).click();
-			if ( driver.findElement(By.id("input_adds_check_box")).isSelected() )
-			{
-				driver.findElement(By.id("input_adds_check_box")).click();
-			}
+			driver.findElement(By.id("exceptionTestButton")).click();
 		}
-			catch(Exception e)
-			{
-				System.out.println("method g "+e.getMessage());
-			}
-		
-	}
+		catch(Exception e)
+		{
+			System.out.println("method testException "+e.getMessage());
+		}
+	}   */
+
 	
 }

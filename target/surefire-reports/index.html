@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\priyankap948\git\mobile\MobileTest\testng.xml</span>
+                    <span>C:\Users\priyankap948\Eclipse\MobileTest\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobile.TestBrowserStack" hash-for-method="steps">steps</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobile.TestEmulator" hash-for-method="testDisplayText">testDisplayText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobile.TestEmulator" hash-for-method="testLabel">testLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobile.TestEmulator" hash-for-method="testRegistration">testRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobile.TestEmulator" hash-for-method="testToast">testToast</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobile.TestEmulator" hash-for-method="testWaitingProgressBar">testWaitingProgressBar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mobile.TestEmulator" hash-for-method="testWebView">testWebView</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,14 +145,49 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">mobile.TestBrowserStack</span>
+              <span class="class-name">mobile.TestEmulator</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="steps">
-                  </a> <!-- steps -->
-                  <span class="method-name">steps</span>
+                  <a name="testDisplayText">
+                  </a> <!-- testDisplayText -->
+                  <span class="method-name">testDisplayText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLabel">
+                  </a> <!-- testLabel -->
+                  <span class="method-name">testLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistration">
+                  </a> <!-- testRegistration -->
+                  <span class="method-name">testRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testToast">
+                  </a> <!-- testToast -->
+                  <span class="method-name">testToast</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWaitingProgressBar">
+                  </a> <!-- testWaitingProgressBar -->
+                  <span class="method-name">testWaitingProgressBar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWebView">
+                  </a> <!-- testWebView -->
+                  <span class="method-name">testWebView</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +195,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\priyankap948\git\mobile\MobileTest\testng.xml</span>
+            <span class="header-content">C:\Users\priyankap948\Eclipse\MobileTest\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +204,7 @@
 &lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;4&quot; verbose=&quot;0&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;mobile.TestBrowserStack&quot;/&gt;
+      &lt;class name=&quot;mobile.TestEmulator&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -184,16 +244,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'steps')
-data.setCell(0, 2, 'mobile.TestBrowserStack')
-data.setCell(0, 3, 8);
+data.setCell(0, 1, 'testWaitingProgressBar')
+data.setCell(0, 2, 'mobile.TestEmulator')
+data.setCell(0, 3, 66892);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testDisplayText')
+data.setCell(1, 2, 'mobile.TestEmulator')
+data.setCell(1, 3, 8246);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testRegistration')
+data.setCell(2, 2, 'mobile.TestEmulator')
+data.setCell(2, 3, 210);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLabel')
+data.setCell(3, 2, 'mobile.TestEmulator')
+data.setCell(3, 3, 78);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testToast')
+data.setCell(4, 2, 'mobile.TestEmulator')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testWebView')
+data.setCell(5, 2, 'mobile.TestEmulator')
+data.setCell(5, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -219,19 +299,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">mobile.TestBrowserStack</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">mobile.TestEmulator</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">steps</span>
-                <span class="method-start">27774 ms</span>
+                <span class="method-name">testDisplayText</span>
+                <span class="method-start">32703 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">after</span>
-                <span class="method-start">27783 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">testLabel</span>
+                <span class="method-start">40950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegistration</span>
+                <span class="method-start">41029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testToast</span>
+                <span class="method-start">41240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWaitingProgressBar</span>
+                <span class="method-start">41241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWebView</span>
+                <span class="method-start">108134 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
